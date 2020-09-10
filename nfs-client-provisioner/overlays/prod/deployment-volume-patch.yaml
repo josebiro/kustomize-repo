@@ -1,0 +1,6 @@
+- op: replace
+  path: "/spec/template/spec/volumes/0/nfs/server"
+  value: "YOUR_SERVER"
+- op: replace
+  path: "/spec/template/spec/volumes/0/nfs/path"
+  value: "YOUR_NFS_PATH"

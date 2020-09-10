@@ -1,0 +1,11 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- nfs-client-provisioner.yaml
+configMapGenerator:
+- name: nfs-client-provisioner-env
+  behavior: create
+  literals:
+  - PROVISIONER_NAME=OVERRIDDEN
+  - NFS_SERVER=OVERRIDDEN
+  - NFS_PATH=OVERRIDDEN
